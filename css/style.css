@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#socialMedia ul {
+  display: flex;
+}
+
+#socialMedia ul li {
+  list-style: none;
+}
+
+#socialMedia ul li a {
+  display: flex;
+  text-decoration: none;
+}
+
+#socialMedia ul li a img {
+  width: 64px;
+  height: 64px;
+  -webkit-box-reflect: below -20px linear-gradient(transparent 70%, rgba(255, 255, 255, 0.5));
+  transition: all 0.3s;
+  transform-origin: 50% 100%;
+}
+
+#socialMedia ul li:hover a img {
+  transform: scale(2);
+  margin: 0 22px;
+}
+
+#socialMedia ul li:hover + li a img,
+#socialMedia ul li.prev a img {
+  transform: scale(1.5);
+  margin: 0 14px;
+}
